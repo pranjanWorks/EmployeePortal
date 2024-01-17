@@ -1,14 +1,15 @@
 import { Avatar, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { blue } from "@mui/material/colors";
 import React from "react";
 
 const InfoCard = ({ item }) => {
     return (
-        <Card sx={{maxWidth:360, marginBottom: "4px"}}>
+        <Card sx={{maxWidth:360, marginBottom: 1, borderRadius: 2}}>
             <CardActionArea>
                 <CardContent>
                     <Grid container spacing={2}>
                         <Grid item xs={4}>
-                            <Avatar>{item.name[0].toUpperCase()}</Avatar>
+                            <Avatar sx={{bgcolor: blue[900]}}>{item.name[0].toUpperCase()}</Avatar>
                         </Grid>
                         <Grid item xs={8}>
                             <Typography variant="h5">

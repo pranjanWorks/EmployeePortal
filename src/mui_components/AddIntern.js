@@ -5,6 +5,7 @@ const AddIntern = () => {
     return (
         <Box
             component="form"
+            width="fit-content"
             sx={{
                 display: 'flex',
                 flexDirection: 'column',
