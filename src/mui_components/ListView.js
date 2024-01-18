@@ -10,7 +10,7 @@ const ListView = ({ items }) => {
     });
     
     return (
-        <List sx={{maxWidth: 360}} dense>
+        <List>
             {listItems}
         </List>
     );
