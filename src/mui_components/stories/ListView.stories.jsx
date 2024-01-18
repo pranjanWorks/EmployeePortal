@@ -1,5 +1,5 @@
-import ListView from "./ListView";
-import interns from "../sample_data/interns";
+import ListView from "../ListView";
+import interns from "../../sample_data/interns";
 
 export default {
     component: ListView,

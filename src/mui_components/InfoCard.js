@@ -1,10 +1,17 @@
 import { Avatar, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 import { blue } from "@mui/material/colors";
 import React from "react";
+import { Link } from "react-router-dom";
 
 const InfoCard = ({ item }) => {
     return (
-        <Card sx={{maxWidth:360, marginBottom: 1, borderRadius: 2}}>
+        <Card 
+            sx={{maxWidth:360, 
+            marginBottom: 1, 
+            borderRadius: 2}}
+            component={Link}
+            to={"/details/"+item.id}
+        >
             <CardActionArea>
                 <CardContent>
                     <Grid container spacing={2}>

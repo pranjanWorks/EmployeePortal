@@ -1,4 +1,4 @@
-import AddIntern from "./AddIntern";
+import AddIntern from "../AddIntern";
 
 export default {
     component: AddIntern,

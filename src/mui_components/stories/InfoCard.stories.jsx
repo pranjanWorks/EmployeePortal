@@ -1,5 +1,5 @@
-import InfoCard from "./InfoCard";
-import interns from "../sample_data/interns";
+import InfoCard from "../InfoCard";
+import interns from "../../sample_data/interns";
 
 export default {
     component: InfoCard,

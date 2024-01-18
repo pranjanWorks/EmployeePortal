@@ -1,4 +1,4 @@
-import AddInternScreen from "./AddInternScreen";
+import AddInternScreen from "../AddInternScreen";
 
 export default {
     component: AddInternScreen,

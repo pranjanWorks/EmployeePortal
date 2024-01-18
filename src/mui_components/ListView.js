@@ -5,7 +5,7 @@ import InfoCard from "./InfoCard";
 const ListView = ({ items }) => {
     const listItems = items.map(item => {
         return (
-            <InfoCard item={item} />
+            <InfoCard key={item.email} item={item} />
         );
     });
     

@@ -1,4 +1,4 @@
-import DetailsView from "./DetailsView";
+import DetailsView from "../DetailsView";
 
 export default {
     component: DetailsView,

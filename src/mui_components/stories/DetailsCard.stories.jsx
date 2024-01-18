@@ -1,5 +1,5 @@
-import interns from "../sample_data/interns";
-import DetailsCard from "./DetailsCard";
+import interns from "../../sample_data/interns";
+import DetailsCard from "../DetailsCard";
 
 export default {
     component: DetailsCard,
