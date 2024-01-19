@@ -33,7 +33,11 @@ const InfoCard = ({ item, deleteHandler }) => {
                     width: "100%"
                 }}
             >
-                <Typography variant="h5" component={Link} to={"/details/"+item.id}>
+                <Typography 
+                    variant="h5" 
+                    onClick={() => navigate(`/details/${item.id}`)}
+                    sx={{cursor: "pointer"}}
+                >
                     {item.name}
                 </Typography>
                 <Box
