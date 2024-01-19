@@ -1,11 +1,17 @@
 import { Avatar, Box, Card, CardActionArea, CardContent, CardMedia, Grid, IconButton, Typography } from "@mui/material";
 import { blue } from "@mui/material/colors";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
 const InfoCard = ({ item, deleteHandler }) => {
+    const navigate = useNavigate();
+
+    const onClickEditIcon = () => {
+        navigate(`/edit/${item.id}`, { state: item });
+    };
+    
     return (
         <Box
             sx={{
@@ -40,7 +46,7 @@ const InfoCard = ({ item, deleteHandler }) => {
                     <IconButton color="error" onClick={() => deleteHandler(item.id)}>
                         <DeleteIcon />
                     </IconButton>
-                    <IconButton color="primary">
+                    <IconButton color="primary" onClick={onClickEditIcon}>
                         <EditIcon />
                     </IconButton>
                 </Box>
