@@ -46,7 +46,6 @@ const EditIntern = ({ editHandler }) => {
             <TextField required id="email" label="Email" value={intern.email} onChange={handleChange}></TextField>
             <TextField required id="department" label="Department" value={intern.department} onChange={handleChange}></TextField>
             <TextField required id="primaryNo" label="Primary Number" value={intern.primaryNo} onChange={handleChange}></TextField>
-            <TextField required id="ext" label="Ext" value={intern.ext} onChange={handleChange}></TextField>
             <Button type="submit" variant="contained">Update</Button>
 
             {!isFormValid && (
