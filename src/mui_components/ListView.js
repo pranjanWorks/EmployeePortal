@@ -10,7 +10,7 @@ const ListView = ({ items, deleteHandler }) => {
     });
     
     return (
-        <List sx={{overflow: 'auto'}}>
+        <List sx={{overflow: 'auto', padding: 1}}>
             {listItems}
         </List>
     );
