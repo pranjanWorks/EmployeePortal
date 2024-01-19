@@ -21,10 +21,18 @@ const MUIApp = () => {
         setInterns([...interns, response.data]);
     };
 
+    const deleteInternHandler = async (id) => {
+        await api.delete(`/interns/${id}`);
+        const newInterns = interns.filter(intern => {
+            return intern.id !== id;
+        });
+        setInterns(newInterns);
+    };
+
     const router = createBrowserRouter([
         {
           path: "/",
-          element: <InternsHome interns={interns} />
+          element: <InternsHome interns={interns} deleteHandler={deleteInternHandler} />
         },
         {
           path: "/add",

@@ -1,11 +1,11 @@
-import { Avatar, Box, Card, CardActionArea, CardContent, CardMedia, Grid, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardActionArea, CardContent, CardMedia, Grid, IconButton, Typography } from "@mui/material";
 import { blue } from "@mui/material/colors";
 import React from "react";
 import { Link } from "react-router-dom";
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
 
-const InfoCard = ({ item }) => {
+const InfoCard = ({ item, deleteHandler }) => {
     return (
         <Box
             sx={{
@@ -35,11 +35,14 @@ const InfoCard = ({ item }) => {
                         display: "flex", 
                         flexDirection: "column", 
                         justifyContent: "space-between", 
-                        gap: 1
                     }}
                 >
-                    <DeleteIcon color="error" />
-                    <EditIcon color="primary" />
+                    <IconButton color="error" onClick={() => deleteHandler(item.id)}>
+                        <DeleteIcon />
+                    </IconButton>
+                    <IconButton color="primary">
+                        <EditIcon />
+                    </IconButton>
                 </Box>
             </Box>
         </Box>

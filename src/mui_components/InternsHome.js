@@ -3,7 +3,7 @@ import React from "react";
 import ListView from "./ListView";
 import { Link } from "react-router-dom";
 
-const InternsHome = ({ interns }) => {
+const InternsHome = ({ interns, deleteHandler }) => {
     return (
         <Box
             height="100vh"
@@ -12,7 +12,7 @@ const InternsHome = ({ interns }) => {
             alignItems="center"
             flexDirection="column"
         >
-            <ListView items={interns}></ListView>
+            <ListView items={interns} deleteHandler={deleteHandler}></ListView>
             <Button 
                 variant="outlined"
                 component={Link}
