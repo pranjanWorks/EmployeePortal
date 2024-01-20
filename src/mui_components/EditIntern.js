@@ -1,8 +1,10 @@
 import { Alert, Box, Button, TextField } from "@mui/material";
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const EditIntern = ({ editHandler }) => {
+    const navigate = useNavigate();
+    
     const location = useLocation();
     
     const [intern, setIntern] = useState(location.state);
@@ -25,7 +27,7 @@ const EditIntern = ({ editHandler }) => {
             return;
         }
         editHandler(intern);
-        window.history.back(-1);
+        navigate(-1);
     };
     
     return (

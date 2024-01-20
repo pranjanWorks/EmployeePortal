@@ -1,13 +1,15 @@
 import { Alert, Box, Button, TextField } from "@mui/material";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const AddIntern = ({ addHandler }) => {
+    const navigate = useNavigate();
+    
     const [intern, setIntern] = useState({
         name: "",
         email: "",
         department: "",
         primaryNo: "",
-        ext: ""
     });
 
     const [isFormValid, setIsFormValid] = useState(true);
@@ -28,7 +30,7 @@ const AddIntern = ({ addHandler }) => {
             return;
         }
         addHandler(intern);
-        window.history.back(-1);
+        navigate(-1);
     };
     
     return (
