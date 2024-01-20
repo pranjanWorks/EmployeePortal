@@ -30,7 +30,7 @@ const InternsHome = ({ interns, deleteHandler }) => {
                 width="fit-content"
                 sx={{padding: 1, marginBottom: "7vh"}}
             >
-                <Fab color="primary" onClick={() => navigate("/add")}>
+                <Fab data-testid="add-button" color="primary" onClick={() => navigate("/add")}>
                     <AddIcon />
                 </Fab>
             </Box>

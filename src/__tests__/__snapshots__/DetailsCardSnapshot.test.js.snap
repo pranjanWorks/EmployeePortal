@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Details Card 1`] = `
+[
+  <style
+    dangerouslySetInnerHTML={
+      {
+        "__html": ".css-v1q24k{width:100%;max-width:360px;box-shadow:0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12);border-radius:16px;}",
+      }
+    }
+    data-emotion="css v1q24k"
+  />,
+  <div
+    className="MuiBox-root css-v1q24k"
+  >
+    <style
+      dangerouslySetInnerHTML={
+        {
+          "__html": ".css-h4y409-MuiList-root{list-style:none;margin:0;padding:0;position:relative;padding-top:8px;padding-bottom:8px;}",
+        }
+      }
+      data-emotion="css h4y409-MuiList-root"
+    />
+    <ul
+      className="MuiList-root MuiList-padding css-h4y409-MuiList-root"
+    >
+      <style
+        dangerouslySetInnerHTML={
+          {
+            "__html": ".css-1p823my-MuiListItem-root{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-ms-flex-pack:start;-webkit-justify-content:flex-start;justify-content:flex-start;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative;-webkit-text-decoration:none;text-decoration:none;width:100%;box-sizing:border-box;text-align:left;padding-top:8px;padding-bottom:8px;padding-left:16px;padding-right:16px;}.css-1p823my-MuiListItem-root.Mui-focusVisible{background-color:rgba(0, 0, 0, 0.12);}.css-1p823my-MuiListItem-root.Mui-selected{background-color:rgba(25, 118, 210, 0.08);}.css-1p823my-MuiListItem-root.Mui-selected.Mui-focusVisible{background-color:rgba(25, 118, 210, 0.2);}.css-1p823my-MuiListItem-root.Mui-disabled{opacity:0.38;}",
+          }
+        }
+        data-emotion="css 1p823my-MuiListItem-root"
+      />
+      <li
+        className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+        disabled={false}
+      >
+        <style
+          dangerouslySetInnerHTML={
+            {
+              "__html": ".css-cveggr-MuiListItemIcon-root{min-width:56px;color:rgba(0, 0, 0, 0.54);-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;display:-webkit-inline-box;display:-webkit-inline-flex;display:-ms-inline-flexbox;display:inline-flex;}",
+            }
+          }
+          data-emotion="css cveggr-MuiListItemIcon-root"
+        />
+        <div
+          className="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+        >
+          <style
+            dangerouslySetInnerHTML={
+              {
+                "__html": ".css-i4bv87-MuiSvgIcon-root{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;width:1em;height:1em;display:inline-block;fill:currentColor;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;transition:fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;font-size:1.5rem;}",
+              }
+            }
+            data-emotion="css i4bv87-MuiSvgIcon-root"
+          />
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PersonIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4m0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4"
+            />
+          </svg>
+        </div>
+        <div>
+          <style
+            dangerouslySetInnerHTML={
+              {
+                "__html": ".css-tlelie-MuiListItemText-root{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;min-width:0;margin-top:4px;margin-bottom:4px;}",
+              }
+            }
+            data-emotion="css tlelie-MuiListItemText-root"
+          />
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <style
+              dangerouslySetInnerHTML={
+                {
+                  "__html": ".css-1rjyaub-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;color:GrayText;font-size:12px;}",
+                }
+              }
+              data-emotion="css 1rjyaub-MuiTypography-root"
+            />
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-1rjyaub-MuiTypography-root"
+            >
+              Name
+            </p>
+          </div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <style
+              dangerouslySetInnerHTML={
+                {
+                  "__html": ".css-10hburv-MuiTypography-root{margin:0;font-family:"Roboto","Helvetica","Arial",sans-serif;font-weight:400;font-size:1rem;line-height:1.5;letter-spacing:0.00938em;display:block;}",
+                }
+              }
+              data-emotion="css 10hburv-MuiTypography-root"
+            />
+            <span
+              className="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+            >
+              Pratyush Ranjan
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+        disabled={false}
+      >
+        <div
+          className="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="EmailIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-1rjyaub-MuiTypography-root"
+            >
+              Email
+            </p>
+          </div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+            >
+              pratyush.ranjan@ringcentral.com
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+        disabled={false}
+      >
+        <div
+          className="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="BusinessIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 7V3H2v18h20V7zM6 19H4v-2h2zm0-4H4v-2h2zm0-4H4V9h2zm0-4H4V5h2zm4 12H8v-2h2zm0-4H8v-2h2zm0-4H8V9h2zm0-4H8V5h2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8zm-2-8h-2v2h2zm0 4h-2v2h2z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-1rjyaub-MuiTypography-root"
+            >
+              Department
+            </p>
+          </div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+            >
+              Development
+            </span>
+          </div>
+        </div>
+      </li>
+      <li
+        className="MuiListItem-root MuiListItem-gutters MuiListItem-padding css-1p823my-MuiListItem-root"
+        disabled={false}
+      >
+        <div
+          className="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="PhoneIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <p
+              className="MuiTypography-root MuiTypography-body1 css-1rjyaub-MuiTypography-root"
+            >
+              Primary Number
+            </p>
+          </div>
+          <div
+            className="MuiListItemText-root css-tlelie-MuiListItemText-root"
+          >
+            <span
+              className="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+            >
+              068510 98354
+            </span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>,
+]
+`;
