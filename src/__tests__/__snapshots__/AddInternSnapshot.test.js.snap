@@ -26,7 +26,6 @@ exports[`AddIntern 1`] = `
     />
     <div
       className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-      data-testid="name"
     >
       <style
         dangerouslySetInnerHTML={
@@ -99,6 +98,7 @@ exports[`AddIntern 1`] = `
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+          data-testid="name-input"
           disabled={false}
           id="name"
           onAnimationStart={[Function]}
@@ -151,7 +151,6 @@ exports[`AddIntern 1`] = `
     </div>
     <div
       className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-      data-testid="email"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
@@ -184,6 +183,7 @@ exports[`AddIntern 1`] = `
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+          data-testid="email-input"
           disabled={false}
           id="email"
           onAnimationStart={[Function]}
@@ -212,7 +212,6 @@ exports[`AddIntern 1`] = `
     </div>
     <div
       className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-      data-testid="department"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
@@ -245,6 +244,7 @@ exports[`AddIntern 1`] = `
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+          data-testid="department-input"
           disabled={false}
           id="department"
           onAnimationStart={[Function]}
@@ -273,7 +273,6 @@ exports[`AddIntern 1`] = `
     </div>
     <div
       className="MuiFormControl-root MuiTextField-root css-1u3bzj6-MuiFormControl-root-MuiTextField-root"
-      data-testid="primaryNo"
     >
       <label
         className="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined MuiFormLabel-colorPrimary Mui-required MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-sizeMedium MuiInputLabel-outlined css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root"
@@ -306,6 +305,7 @@ exports[`AddIntern 1`] = `
           aria-invalid={false}
           autoFocus={false}
           className="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
+          data-testid="primaryNo-input"
           disabled={false}
           id="primaryNo"
           onAnimationStart={[Function]}
