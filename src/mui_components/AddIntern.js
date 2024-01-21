@@ -47,10 +47,10 @@ const AddIntern = ({ addHandler }) => {
             noValidate
             autoComplete="off"
         >
-            <TextField required id="name" data-testid="name" label="Name" value={intern.name} onChange={handleChange}></TextField>
-            <TextField required id="email" data-testid="email" label="Email" value={intern.email} onChange={handleChange}></TextField>
-            <TextField required id="department" data-testid="department" label="Department" value={intern.department} onChange={handleChange}></TextField>
-            <TextField required id="primaryNo" data-testid="primaryNo" label="Primary Number" value={intern.primaryNo} onChange={handleChange}></TextField>
+            <TextField required id="name" label="Name" value={intern.name} onChange={handleChange} inputProps={{'data-testid': 'name-input'}}></TextField>
+            <TextField required id="email" label="Email" value={intern.email} onChange={handleChange} inputProps={{'data-testid': 'email-input'}}></TextField>
+            <TextField required id="department" label="Department" value={intern.department} onChange={handleChange} inputProps={{'data-testid': 'department-input'}}></TextField>
+            <TextField required id="primaryNo" label="Primary Number" value={intern.primaryNo} onChange={handleChange} inputProps={{'data-testid': 'primaryNo-input'}}></TextField>
             <Button type="submit" data-testid="submit" variant="contained">Submit</Button>
 
             {!isFormValid && (
