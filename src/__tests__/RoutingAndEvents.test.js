@@ -9,6 +9,7 @@ import interns from '../sample_data/interns';
 import '@testing-library/jest-dom'
 import { RouterProvider, createMemoryRouter } from 'react-router-dom';
 import EditIntern from '../mui_components/EditIntern';
+import InfoCard from '../mui_components/InfoCard';
 
 const mockUseNavigate = jest.fn();
 jest.mock('react-router-dom', () => ({
@@ -16,7 +17,7 @@ jest.mock('react-router-dom', () => ({
   useNavigate: () => mockUseNavigate,
 }));
 
-describe('Routing Tests', () => {
+describe('Routing and Event Tests', () => {
     it('Route to "/add" on Fab icon click', () => {
         const { getByTestId } = render(
             <InternsHome interns={interns} deleteHandler={() => {}} />
@@ -142,5 +143,30 @@ describe('Routing Tests', () => {
 
         expect(mockEditHandler).not.toHaveBeenCalled();
         expect(queryByText('All fields are mandatory.')).toBeInTheDocument();
+    });
+
+    it('Route to editInternScreen when edit icon is clicked', () => {
+        const intern = interns[0];
+        const { getByTestId } = render(<InternsHome interns={interns} deleteHandler={() => {}}/>);
+        const editIconButton = getByTestId(`edit-icon-button-${intern.id}`);
+
+        fireEvent.click(editIconButton);
+
+        expect(mockUseNavigate).toHaveBeenCalledWith(`/edit/${intern.id}`, { state: intern });
+    });
+
+    it('Clicking the delete icon removes the item from the interns list', () => {
+        const intern = interns[0];
+        const mockDeleteHandler = jest.fn();
+
+        const { queryByText, getByTestId } = render(
+            <InternsHome interns={interns} deleteHandler={mockDeleteHandler} />
+        );
+
+        const deleteIconButton = getByTestId(`delete-icon-button-${intern.id}`);
+
+        fireEvent.click(deleteIconButton);
+
+        expect(mockDeleteHandler).toHaveBeenCalledWith(intern.id);
     });
 });
