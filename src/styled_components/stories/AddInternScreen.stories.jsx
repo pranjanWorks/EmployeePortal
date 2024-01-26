@@ -2,7 +2,7 @@ import AddInternScreen from "../AddInternScreen";
 
 export default {
     component: AddInternScreen,
-    title: 'Styled AddInternScreen',
+    title: 'StyledAddInternScreen',
     tags: ['autodocs']
 };
 

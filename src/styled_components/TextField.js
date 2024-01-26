@@ -1,3 +1,4 @@
+import { forwardRef, useState } from "react";
 import styled from "styled-components";
 
 const StyledTextField = styled.input`
@@ -7,8 +8,19 @@ const StyledTextField = styled.input`
     border-radius: 0.5em;
 `;
 
-const TextField = (props) => {
-    return <StyledTextField type="text" value={props.value} placeholder={props.placeholder} />
-};
+const TextField = forwardRef((props, ref) => {
+    const [value, setValue] = useState(props.value);
+    
+    return <StyledTextField 
+                ref={ref}
+                type="text" 
+                value={value} 
+                placeholder={props.placeholder} 
+                onChange={(e) => {
+                    e.preventDefault();
+                    setValue(e.target.value);
+                }}
+            />
+});
 
 export default TextField;

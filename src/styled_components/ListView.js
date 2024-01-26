@@ -7,9 +7,9 @@ const ListViewContainer = styled.div`
     padding: 4px;
 `;
 
-const ListView = ({ interns }) => {
+const ListView = ({ interns, deleteHandler }) => {
     const listItems = interns.map(intern => {
-        return <ListItem intern={intern} />
+        return <ListItem key={intern.id} intern={intern} deleteHandler={deleteHandler} />
     });
 
     return (

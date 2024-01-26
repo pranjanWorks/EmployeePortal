@@ -8,9 +8,9 @@ const StyledAvatar = styled.img`
     cursor: pointer;
 `;
 
-const Avatar = ({ imgUrl }) => {
+const Avatar = ({ imgUrl, onClickHandler }) => {
     return (
-        <StyledAvatar src={imgUrl} alt="Avatar" />
+        <StyledAvatar src={imgUrl} alt="Avatar" onClick={onClickHandler} />
     );
 };
 
