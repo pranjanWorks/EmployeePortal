@@ -38,7 +38,10 @@ const ListItem = ({ intern, deleteHandler }) => {
                     imgUrl="https://as2.ftcdn.net/v2/jpg/01/90/89/15/1000_F_190891550_N7uKp2aHE3mOc20dmtDytj7atgvbhdOu.jpg"
                     onClickHandler={() => deleteHandler(intern.id)}
                 />
-                <Avatar imgUrl="https://as2.ftcdn.net/v2/jpg/01/09/40/45/1000_F_109404594_0N0O1Yki0kGrODecWMvVt3qettBtzWtq.jpg" />
+                <Avatar 
+                    imgUrl="https://as2.ftcdn.net/v2/jpg/01/09/40/45/1000_F_109404594_0N0O1Yki0kGrODecWMvVt3qettBtzWtq.jpg"
+                    onClickHandler={() =>  navigate(`/edit/${intern.id}`, { state: { data: intern } })}
+                />
             </StyledListItemIconsContainer>
         </StyledListItemContainer>
     );

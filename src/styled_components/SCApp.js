@@ -19,14 +19,14 @@ const SCApp = () => {
 
     const addInternHandler = async (newIntern) => {
         const response = await api.post("/interns", newIntern);
-        setInterns([...interns, {...response.data}]);
+        setInterns([...interns, response.data]);
     };
 
     const updateInternHandler = async (intern) => {
         const response = await api.put(`/interns/${intern.id}`, intern);
         const id = intern.id;
         setInterns(interns.map(intern => {
-            return intern.id !== id ? intern : response.data; // !!check
+            return intern.id !== id ? intern : response.data;
         }));
     };
 

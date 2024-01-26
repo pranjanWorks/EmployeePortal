@@ -7,20 +7,18 @@ const EditInternScreen = ({ updateHandler }) => {
     const location = useLocation();
     const intern = location.state.data;
     
-    const onUpdateClick = (textFields) => {
-        const updatedIntern = {name: '', email: '', department: '', primaryNo: ''};
-        
-        updatedIntern.name = textFields[0].value;
-        updatedIntern.email = textFields[1].value;
-        updatedIntern.department = textFields[2].value;
-        updatedIntern.primaryNo = textFields[3].value;
+    const onUpdateClick = (textFieldRefs) => {
+        intern.name = textFieldRefs[0].current.value;
+        intern.email = textFieldRefs[1].current.value;
+        intern.department = textFieldRefs[2].current.value;
+        intern.primaryNo = textFieldRefs[3].current.value;
 
-        if (Object.values(updatedIntern).some(value => value === "")) {
+        if (Object.values(intern).some(value => value === "")) {
             alert("All fields are mandatory");
             return;
         }
 
-        updateHandler(updatedIntern);
+        updateHandler(intern);
         navigate(-1);
     };
     
