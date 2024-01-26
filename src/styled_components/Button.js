@@ -19,11 +19,16 @@ const StyledButtonOutlined = styled(StyledButtonContained)`
 `;
 
 const ButtonContained = (props) => {
-    return <StyledButtonContained type={props.type ? props.type : "button"} props={props}>{props.label}</StyledButtonContained>
+    return <StyledButtonContained 
+                type={props.type ? props.type : "button"} 
+                onClick={props.onClick} 
+            >
+                {props.label}
+            </StyledButtonContained>
 };
 
 const ButtonOutlined = (props) => {
-    return <StyledButtonOutlined type={props.type ? props.type : "button"} props={props}>{props.label}</StyledButtonOutlined>
+    return <StyledButtonOutlined type={props.type ? props.type : "button"}>{props.label}</StyledButtonOutlined>
 };
 
 export { ButtonContained, ButtonOutlined };
