@@ -48,7 +48,7 @@ const InfoCard = ({ item, deleteHandler }) => {
                         justifyContent: "space-between", 
                     }}
                 >
-                    <IconButton color="error" onClick={() => deleteHandler(item.id)} data-testid={`delete-icon-button-${item.id}`}>
+                    <IconButton color="error" onClick={() => deleteHandler(item.id)} data-testid={`delete-icon-button-${item.email}`}>
                         <DeleteIcon />
                     </IconButton>
                     <IconButton color="primary" onClick={onClickEditIcon} data-testid={`edit-icon-button-${item.id}`}>
