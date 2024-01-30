@@ -102,7 +102,5 @@ test('Starting from homepage -> adding an invalid intern\
         expect(screen.getByText('Pratyush Ranjan')).toBeInTheDocument();
     });
     
-    await waitFor(() => {
-        expect(screen.queryByText(newIntern.name)).toBeNull();
-    });
+    expect(screen.queryByText(newIntern.name)).toBeNull();
 });
