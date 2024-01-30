@@ -163,7 +163,7 @@ describe('Routing and Event Tests', () => {
             <InternsHome interns={interns} deleteHandler={mockDeleteHandler} />
         );
 
-        const deleteIconButton = getByTestId(`delete-icon-button-${intern.id}`);
+        const deleteIconButton = getByTestId(`delete-icon-button-${intern.email}`);
 
         fireEvent.click(deleteIconButton);
 
