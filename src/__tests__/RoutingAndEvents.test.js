@@ -52,7 +52,7 @@ describe('Routing and Event Tests', () => {
 
         fireEvent.click(submitButton);
         expect(mockAddHandler).toHaveBeenCalledWith(intern);
-        expect(mockUseNavigate).toHaveBeenCalledWith(-1);
+        expect(mockUseNavigate).toHaveBeenCalledWith("/");
     });
 
     it('Do not invoke addHandler when any field is empty in \
