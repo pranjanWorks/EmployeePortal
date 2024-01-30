@@ -52,6 +52,12 @@ test('Starting from homepage -> adding a new valid intern\
     await waitFor(() => {
         expect(screen.getByText(newIntern.name)).toBeInTheDocument();
     });
+
+    const deleteIcon = screen.getByTestId(`delete-icon-button-${newIntern.email}`);
+    userEvent.click(deleteIcon);
+    await waitFor(() => {
+        expect(screen.queryByText(newIntern.name)).toBeNull();
+    });
 });
 
 test('Starting from homepage -> adding an invalid intern\
