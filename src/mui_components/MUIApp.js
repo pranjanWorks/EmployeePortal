@@ -17,9 +17,19 @@ const MUIApp = () => {
         getAllInterns();
     }, []);
 
+    function uniqueEmail(newIntern, interns) {
+        const sameEmailExists = interns.some(intern => {
+            return intern.email === newIntern.email;
+        });
+        return !sameEmailExists;
+    };
+
     const addInternHandler = async (newIntern) => {
-        const response = await api.post('/interns', newIntern);
-        setInterns([...interns, response.data]);
+        const isUniqueEmail = uniqueEmail(newIntern, interns);
+        if (isUniqueEmail) {
+            const response = await api.post('/interns', newIntern);
+            setInterns([...interns, response.data]);
+        }
     };
 
     const deleteInternHandler = async (id) => {

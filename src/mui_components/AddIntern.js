@@ -30,7 +30,7 @@ const AddIntern = ({ addHandler }) => {
             return;
         }
         addHandler(intern);
-        navigate(-1);
+        navigate("/");
     };
     
     return (

@@ -24,6 +24,7 @@ const InfoCard = ({ item, deleteHandler }) => {
                 borderRadius: 2,
                 marginBottom: 2
             }}
+            data-testid="infocard"
         >
             <Avatar sx={{bgcolor: blue[900]}}>{item.name[0].toUpperCase()}</Avatar>
             <Box
