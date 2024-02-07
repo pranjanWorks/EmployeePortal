@@ -11,7 +11,7 @@ const MUIApp = () => {
 
     useEffect(() => {
         const getAllInterns = async () => {
-            const response = await api.get('/interns');
+            const response = await api.get();
             if (response.data) setInterns((response).data);
         };
         getAllInterns();
@@ -27,13 +27,14 @@ const MUIApp = () => {
     const addInternHandler = async (newIntern) => {
         const isUniqueEmail = uniqueEmail(newIntern, interns);
         if (isUniqueEmail) {
-            const response = await api.post('/interns', newIntern);
+            const config = { headers: {'Content-Type': 'application/json'} };
+            const response = await api.post('', newIntern, config);
             setInterns([...interns, response.data]);
         }
     };
 
     const deleteInternHandler = async (id) => {
-        await api.delete(`/interns/${id}`);
+        await api.delete(`${id}`);
         const newInterns = interns.filter(intern => {
             return intern.id !== id;
         });
@@ -41,7 +42,8 @@ const MUIApp = () => {
     };
 
     const editInternHandler = async (intern) => {
-        const response = await api.put(`/interns/${intern.id}`, intern);
+        const config = { headers: {'Content-Type': 'application/json'} };
+        const response = await api.put('', intern, config);
         const id = intern.id;
         setInterns(
             interns.map(intern => {

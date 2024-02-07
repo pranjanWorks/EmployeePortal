@@ -10,7 +10,7 @@ const DetailsScreen = () => {
 
     useEffect(() => {
         const getInternById = async (id) => {
-            const response = await api.get('/interns/'+id);
+            const response = await api.get(`${id}`);
             setIntern(response.data);
         };
         getInternById(id);
